@@ -1,7 +1,7 @@
-title: CS181
+title: OS
 
-url: https://harvard-ml-courses.github.io
-baseurl: /cs181-web
+url: https://rabeehabbasi.github.io
+baseurl: /os
 
 exclude:
   - 2019
