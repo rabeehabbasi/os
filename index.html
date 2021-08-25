@@ -10,17 +10,6 @@ weight: 0
 		<p class="head-subtitle">Dr. M. Afzal Bhatti</p>
 	</div>
 </section>
-<!-- <section class="main-container text">
-	<div class="main">
-		<h2 class="title announcement">Announcements</h2>
-		<p>
-		<ul>
-			<li><a href="sections#sec12">Section 12: Reinforcement Learning</a> materials are posted. </li>
-			<li><a href="homework#hw6">Homework 6</a> is released and is due on Friday, April 23 at 7:59PM. </li>
-		</ul>
-		</p>
-	</div>
-</section> -->
 <section class="main-container text">
 	<div class="main">
 		<h2 class="title">Objectives</h2>
@@ -48,8 +37,54 @@ weight: 0
 			</ul>
 		</p>
 
-		<p class="link">
-			<a href="{{ site.baseurl }}/schedule">Course schedule and outline.</a>
-		</p>
+		<h2>Course Material</h2> 
+
+		<table class="table">
+			<tr>
+				<th>Sr</th>
+				<th>Topic</th>
+				<th>Video</th>
+				<th>Notes</th>
+				<th>Exercises</th>
+			</tr>
+			{% for lecture in site.data.all.lectures %}
+			<tr class='{{lecture.type|default: ""}}'>
+				<td> {{site.data.all.sno[forloop.index]}} </td>
+				<td> {{lecture.topic | default: ""}} </td>
+				<td>
+					{% if lecture.video %} 
+					<iframe width="420" height="315" src="{{lecture.video}}" frameborder="0" allowfullscreen></iframe>
+					{% endif %} 
+				</td>
+				<td>
+					{% if lecture.notes %} 
+					<a href="files/{{lecture.notes}}">{{lecture.notes}}</a>
+					{% endif %} 
+				</td>
+				<td>
+					{% if lecture.exercises %} 
+					<a href="files/{{lecture.exercises}}">{{lecture.exercises}}</a>
+					{% endif %} 
+				</td>
+			</tr>
+			{% endfor %}
+		</table>
+		<h2>Recommended Readings</h2>
+		<ul>
+			<li>A. Silberschatz et al, Operating System Concepts,  9/e, Wiley, 2013</li>
+			<li>W. Stallings, Operating Systems:  Internal and Design Principles, 7/e, Prentice Hall, 2012</li>
+		</ul>
+
+
+		<h2>Acknowledgements</h2>
+		
+		<p>While teaching operating system course at Quaid-i-Azam University, I augmented my understating of operating systems from two main text   books used for the course 'Operating System Concepts' by A. Silberschatz et al' and  'Operating Systems: Internal and Design Principles' by W. Stallings. Lecture notes are also prepared from these books listed as recommended readings for this course.</p>
+
+		<p>Exercises for lecture topics are mostly from course quizzes and exam papers at Quaid-i-Azam University, I am grateful to all students who solved those questions in exams and during lectures ask questions to clarify concepts of different topics.</p>
+
+		<p>For lecture presentations some images and animation ideas are taken from OS lecture presentations available at web.</p>
+
+		
+
 	</div>
 </section>
