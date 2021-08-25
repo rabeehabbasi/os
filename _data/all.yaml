@@ -27,117 +27,117 @@ sno: [
 
 lectures:
   - topic: Operating System - An overview. Operating System types with historical perspective 
-    video: https://www.youtube.com/embed/v0KIc74TrlQ
+    video: https://www.youtube.com/watch?v=v0KIc74TrlQ
     notes: OS-Overview.pdf
     exercises:
     type: ''
   - topic: Process Models for operating system types
-    video: https://www.youtube.com/embed/_EEiHdq4jvk
+    video: https://www.youtube.com/watch?v=_EEiHdq4jvk
     notes: 
     exercises: Exercises-OS-Types-Process-Model.pdf
     type: 'hw'
   - topic: Memory Management - Fixed/Variable partitions Allocation
-    video: https://www.youtube.com/embed/cl8h_BnE1sQ
+    video: https://www.youtube.com/watch?v=cl8h_BnE1sQ
     notes: Memory-Management-Static-Dynamic-Partitions.pdf
     exercises: Exercises-Memory-Management-Static-Dynamic-Partitions.pdf
     type: 'hw'
   - topic:  Paging - non-contiguous allocation and Address Translation
-    video: https://www.youtube.com/embed/4Yqq9TJ320w
+    video: https://www.youtube.com/watch?v=4Yqq9TJ320w
     notes: Paging.pdf
     exercises: Exercises-Paging-LA-2-PA-Translation.pdf
     type: 'hw'
   - topic:  Segmentation; Paged segmentation; Multilevel paging
-    video: https://www.youtube.com/embed/K3Y3Xxso_Do
+    video: https://www.youtube.com/watch?v=K3Y3Xxso_Do
     notes: Segmentation-Multilevel-Paging.pdf
     exercises: Exercises-Segmentation-Multilevel-Paging.pdf
     type: 'hw'
   - topic: Virtual Memory - Demand paging. Virtual to Physical Address Tanslation
-    video: https://www.youtube.com/embed/UVapo4ad9nY
+    video: https://www.youtube.com/watch?v=UVapo4ad9nY
     notes: Virtual-Memory.pdf
     exercises:
     type: ''
   - topic: Page Replacement Algorithms
-    video: https://www.youtube.com/embed/CgR_rQ29DW0
+    video: https://www.youtube.com/watch?v=CgR_rQ29DW0
     notes: Page-Replacement-Algorithms.pdf
     exercises: Exercises-Page-Replacment.pdf
     type: 'hw'
   - topic: Process and Threads
-    video: https://www.youtube.com/embed/3GH8XJ2D6sU
+    video: https://www.youtube.com/watch?v=3GH8XJ2D6sU
     notes:
     exercises:
     type: ''
   - topic: Processor Scheduling Policies
-    video: https://www.youtube.com/embed/M3yFE4EILGI
+    video: https://www.youtube.com/watch?v=M3yFE4EILGI
     notes: Process-Scheduling.pdf
     exercises: Exercises-CPU-Scheduling.pdf
     type: 'hw'
   - topic:     Virtual Round Robin, Multilevel Feedback Queues
-    video: https://www.youtube.com/embed/-gPM5R1NA9A
+    video: https://www.youtube.com/watch?v=-gPM5R1NA9A
     notes: 
     exercises:
     type: ''
   - topic: Process coordination - Critical Section Problem - Software Solution
-    video: https://www.youtube.com/embed/EtRSkHNn0OI
+    video: https://www.youtube.com/watch?v=EtRSkHNn0OI
     notes:
     exercises: Exercises-C.S-Problem-Software-Solution.pdf
     type: 'hw'
   - topic: Hardware based Solutions of Critical Section Problem
-    video: https://www.youtube.com/embed/UtB2Stf2Vg8
+    video: https://www.youtube.com/watch?v=UtB2Stf2Vg8
     notes: Process-Coordination-C.S-Problem-soft-hardware-solution.pdf
     exercises:
     type: ''
   - topic: Semaphores for Mutual Exclusion & Synchronization - N-Process Mutual Excluion
-    video: https://www.youtube.com/embed/Yr-hHggVXHw
+    video: https://www.youtube.com/watch?v=Yr-hHggVXHw
     notes: Semaphores-Critical-Section-and-Producer-Consumer-Problem.pdf
     exercises: Exercises-Semaphores-for-Process-Coordination.pdf
     type: 'hw'
   - topic: Use of Semaphores for Producer-Consumer Problem
-    video: https://www.youtube.com/embed/NgbIbYa6Jq0
+    video: https://www.youtube.com/watch?v=NgbIbYa6Jq0
     notes:
     exercises:
     type: ''
   - topic: Use of Semaphores for Reader/Writer Problems - Reader's Priority
-    video: https://www.youtube.com/embed/Vbznr1Jp8JY
+    video: https://www.youtube.com/watch?v=Vbznr1Jp8JY
     notes:
     exercises:
     type: ''
   - topic: Use of Semaphores for Reader/Writer Problems - Writer's Priority
-    video: https://www.youtube.com/embed/XO3w-WJ423c
+    video: https://www.youtube.com/watch?v=XO3w-WJ423c
     notes: Semaphores-Reader-Writer-Problem.pdf
     exercises:
     type: ''
   - topic: Use of Semaphores for Dining-Philosophers-Problem
-    video: https://www.youtube.com/embed/0XvbFgXkJo8
+    video: https://www.youtube.com/watch?v=0XvbFgXkJo8
     notes: Semaphores-Dining-Philosophers-Problem.pdf
     exercises:
     type: ''
   - topic: Inter-Process Communication - Message Passing to solve Synchronization Issues
-    video: https://www.youtube.com/embed/VQvd68ao3aQ
+    video: https://www.youtube.com/watch?v=VQvd68ao3aQ
     notes: IPC-Msg-Passing.pdf
     exercises:
     type: ''
   - topic: Deadlocks Conditions - Prevention and Avoidance
-    video: https://www.youtube.com/embed/RiCn32hcgz4
+    video: https://www.youtube.com/watch?v=RiCn32hcgz4
     notes: Deadlocks.pdf
     exercises:
     type: ''
   - topic: Deadlocks - Illustartion of Avoidance and Detection Algorithms and Recovery
-    video: https://www.youtube.com/embed/TfTKOZ2JZZI
+    video: https://www.youtube.com/watch?v=TfTKOZ2JZZI
     notes:
     exercises:
     type: ''
   - topic: Information-Storage-Management-Disk Scheduling
-    video: https://www.youtube.com/embed/02SpQKrsJCE
+    video: https://www.youtube.com/watch?v=02SpQKrsJCE
     notes: Info-Storage-Mngmnt-Disk-Scheduling.pdf
     exercises:
     type: ''
   - topic: File System - File Organization, Access Methods, Disk Space Allocation
-    video: https://www.youtube.com/embed/mSPTZiI1CCY
+    video: https://www.youtube.com/watch?v=mSPTZiI1CCY
     notes: File-System.pdf
     exercises:
     type: ''
   - topic: File System - Functions, Implementation, Protection
-    video: https://www.youtube.com/embed/t9LjStuwM5s
+    video: https://www.youtube.com/watch?v=t9LjStuwM5s
     notes:
     exercises:
     type: ''

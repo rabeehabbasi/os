@@ -36,47 +36,74 @@ weight: 0
 				</li>
 			</ul>
 		</p>
-
-		<h2>Course Material</h2> 
-
+		<h2 class="title">Course Contents</h2> 
+		<p class="center">
+			[<a href="#lectures">Lectures</a>]&nbsp;&nbsp;&nbsp;[<a href="#notes">Lecture Notes</a>]&nbsp;&nbsp;&nbsp;[<a href="#exercises">Exercises</a>]
+			</p>
+	
 		<table class="table">
 			<tr>
 				<th>Sr</th>
 				<th>Topic</th>
-				<th>Video</th>
-				<th>Notes</th>
-				<th>Exercises</th>
+				<th>Links</th>
 			</tr>
 			{% for lecture in site.data.all.lectures %}
-			<tr class='{{lecture.type|default: ""}}'>
+			<tr>
 				<td> {{site.data.all.sno[forloop.index]}} </td>
 				<td> {{lecture.topic | default: ""}} </td>
 				<td>
 					{% if lecture.video %} 
-					<iframe width="420" height="315" src="{{lecture.video}}" frameborder="0" allowfullscreen></iframe>
+					<a href="{{lecture.video}}" target="youtube">Video</a>
 					{% endif %} 
-				</td>
-				<td>
 					{% if lecture.notes %} 
-					<a href="files/{{lecture.notes}}">{{lecture.notes}}</a>
+					 | <a href="files/{{lecture.notes}}">Notes</a>
 					{% endif %} 
-				</td>
-				<td>
 					{% if lecture.exercises %} 
-					<a href="files/{{lecture.exercises}}">{{lecture.exercises}}</a>
+					 | <a href="files/{{lecture.exercises}}">Exercise</a>
 					{% endif %} 
+					
 				</td>
 			</tr>
 			{% endfor %}
 		</table>
-		<h2>Recommended Readings</h2>
+		<h2 class="title" id="lectures">Lecture Videos</h2>
+		<ol>
+			{% for lecture in site.data.all.lectures %}
+			{% if lecture.video %} 
+			<li><a href="{{lecture.video}}" target="youtube">{{lecture.topic}}</a></li>
+			{% endif %} 
+			{% endfor %}
+		</ol>
+		<h2 class="title" id="notes">Lecture Notes</h2>
+		<ol>
+			{% for lecture in site.data.all.lectures %}
+			{% if lecture.notes %} 
+			<li><a href="files/{{lecture.notes}}">{{lecture.topic | default: ""}}</a></li>
+			{% endif %} 
+			{% endfor %}
+		</ol>
+		<h2 class="title" id="exercises">Exercises</h2>
+
+		<ol>
+			{% for lecture in site.data.all.lectures %}
+			{% if lecture.exercises %} 
+			<li><a href="files/{{lecture.exercises}}">{{lecture.topic | default: ""}}</a></li>
+			{% endif %} 
+			{% endfor %}
+		</ol>
+
+
+
+
+
+		<h2 class="title">Recommended Readings</h2>
 		<ul>
 			<li>A. Silberschatz et al, <i>Operating System Concepts</i>,  9/e, Wiley, 2013</li>
 			<li>W. Stallings, <i>Operating Systems:  Internal and Design Principles</i>, 7/e, Prentice Hall, 2012</li>
 		</ul>
 
 
-		<h2>Acknowledgements</h2>
+		<h2 class="title">Acknowledgements</h2>
 		
 		<p>While teaching operating system course at Quaid-i-Azam University, I augmented my understating of operating systems from two main text books used for the course '<i>Operating System Concepts</i>' by A. Silberschatz et al' and  '<i>Operating Systems: Internal and Design Principles</i>' by W. Stallings. Lecture notes are also prepared from these books listed as recommended readings for this course.</p>
 

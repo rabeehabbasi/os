@@ -143,6 +143,9 @@ p.link a:hover, ul.lists li a:hover {
     border-bottom: 1px solid #000; }
 p.link a:inactive, ul.lists li.inactive {
     color: #ccc; }
+p.center {
+    text-align: center;
+}
 
 .table .sec {
     background-color: #F1F1FF;
@@ -162,12 +165,11 @@ p.link a:inactive, ul.lists li.inactive {
 }
 
 .table td {
-    font-size: 0.75em;
     font-weight: 300;
 }
 
 body {
-    font-size: 1.5em;
+    font-size: 1.75em;
 }
 
 #images{
