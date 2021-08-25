@@ -1,9 +1,0 @@
-# Why is the following necessary at the top of the index.html file
-# to make the YAML stuff work?
-
----
-layout: page
-title: Home
-weight: 0
----
-
